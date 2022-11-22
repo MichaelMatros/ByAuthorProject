@@ -1,0 +1,169 @@
+:root {
+  --clr-light: #ffffff;
+  --clr-accent: #767676;
+  --clr-dark: #000000;
+
+  --ff-serif-poppins: "Poppins", sans-serif;
+  --ff-serif-montserrat: "Montserrat", sans-serif;
+  --ff-serif-montserrat_alt: "Montserrat Alternates", sans-serif;
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+  color: var(--clr-light);
+}
+
+button {
+  width: 100%;
+  padding-block: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 3.125rem;
+  cursor: pointer;
+}
+main .left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.29), rgba(0, 0, 0, 0.29)),
+    url(./login-image.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom 35% center;
+}
+main .left .brand {
+  margin-top: 2.3125rem;
+  margin-left: 1.8125rem;
+  font-family: var(--ff-serif-poppins);
+}
+main .left h1 {
+  font-family: var(--ff-serif-poppins);
+  font-weight: 275;
+  font-size: 8.75rem;
+  line-height: 135px;
+  text-transform: uppercase;
+}
+main .left .brand span {
+  padding: 0.25rem 0.5rem;
+  border: 2px solid var(--clr-accent);
+  border-radius: 12px;
+  font-weight: bold;
+}
+main .left .left-body {
+  margin-left: 2.375rem;
+  display: flex;
+  align-items: baseline;
+}
+.left-body__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-body__bottom p {
+  flex: 1;
+}
+.left-body__bottom .create {
+  margin-right: 0.625rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9375rem;
+  font-family: var(--ff-serif-montserrat_alt);
+  font-weight: 300;
+  font-size: 23px;
+  color: var(--clr-light);
+}
+main .left .left-body img {
+  width: 200px;
+  height: auto;
+}
+main .left p {
+  margin-left: 2.375rem;
+  margin-bottom: 1.875rem;
+  font-family: var(--ff-serif-montserrat_alt);
+  font-size: 1.4375rem;
+  line-height: 1.75rem;
+  color: var(--clr-light);
+}
+.left-body__bottom p span {
+  font-weight: 600;
+  font-size: 1.4375rem;
+  line-height: 1.75rem;
+}
+
+main .right {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--clr-dark);
+  width: 100%;
+  max-width: 40rem;
+  text-align: center;
+}
+main .right h2 {
+  font-family: var(--ff-serif-montserrat);
+  font-weight: 500;
+  font-size: 2.375rem;
+  text-transform: uppercase;
+}
+main .right p {
+  font-family: var(--ff-serif-montserrat);
+  line-height: 1.3125rem;
+  text-transform: uppercase;
+}
+main .right .social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+
+.social-login button span {
+  font-family: var(--ff-serif-poppins);
+  font-weight: 275;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.right .divider {
+  display: flex;
+  align-items: center;
+}
+.right .divider span {
+  border: 0.3px solid #151515;
+  width: 244px;
+}
+.right .divider div {
+  margin-inline: 1.4375rem;
+  font-family: var(--ff-serif-poppins);
+  font-weight: 275;
+  font-size: 24px;
+}
+.bottom button {
+  font-family: var(--ff-serif-poppins);
+  font-weight: 300;
+  font-size: 1.5rem;
+  background-color: var(--clr-dark);
+  border: 0;
+  color: #ffffff;
+}
+
+.bottom div span {
+  margin-top: 2.8125rem;
+  margin-bottom: 0.75rem;
+  display: block;
+  font-family: var(--ff-serif-poppins);
+  font-weight: 300;
+  font-size: 1.3125rem;
+}
+.right div a {
+  font-family: var(--ff-serif-poppins);
+  font-weight: 275;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  color: var(--clr-accent);
+}
