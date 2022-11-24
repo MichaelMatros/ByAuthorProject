@@ -116,7 +116,7 @@ main .right {
   max-width: 40rem;
   text-align: center;
 }
-main .right h2 {
+main .right h1 {
   font-family: var(--ff-serif-montserrat);
   font-weight: 500;
   font-size: 2.375rem;
